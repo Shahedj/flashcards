@@ -1,0 +1,111 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://marketplace.canva.com/EAEthkBVLfQ/1/0/1600w/canva-blush-wave-desktop-wallpaper-drvq3zaYl2E.jpg);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 1s;
+}
+button:hover {
+  border-color: #ffffff;
+  transform: translateY(-8px);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+  button {
+    background-color: #f35678b6;
+    margin: 20px;
+  }
+}
+
+.card {
+  margin-top: 35px;
+  height: 260px;
+  background-color: #b14b66bd;
+  margin-bottom: 35px;
+  display: flex; /* Add this to make text centering more consistent */
+  justify-content: center; /* Add this to horizontally center the text */
+  align-items: center; /* Add this to vertically center the text */
+  box-shadow: 0 24px 38px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  transition: 0.5s;
+  
+}
+
+.card h2 {
+  margin: 0; /* Reset any default margins */
+  text-align: center; /* Center the text within the h2 element */
+  color: #48162b; /* Set the text color if needed */
+}
+
+
+
+.card:hover{
+transform: translateY(-16px);
+}
+
+.card:active{
+transform: translateZ(-15px);
+background-color: rgb(255, 101, 96);
+}
+
+h1{
+  color: #f46a91;
+}
+
+.title{
+  color: #f46a91;
+}
+
+  
