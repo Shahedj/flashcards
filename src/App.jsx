@@ -8,6 +8,10 @@ const App = () => {
   const updateCount = () => setCount(count + 1);
   const decreaseCount = () => setCount(count - 1);
 
+  const [answer, setAnswer] = useState('');
+  const [result, setResult] = useState('');
+
+
   const cardPairs = [
     { question: "King of the jungle, with a majestic mane and a fierce roar.", answer: "Lion" },
     { question: "Massive mammal known for its long trunk and large ears.", answer: "Elephant" },
@@ -25,6 +29,27 @@ const App = () => {
     setIsFlipped(!isFlipped); // Toggle the isFlipped state when the card is clicked
   }
 
+  const handleChange = (event) => {
+    setAnswer(event.target.value);
+  };
+
+  const answerComparison = (e) => {
+
+    e.preventDefault();
+    const correctAnswer = cardPairs[count].answer.toLowerCase();
+    if (correctAnswer === answer.toLowerCase()) {
+      setResult('correctAnswer');
+
+    } else {
+
+      setResult('wrongAnswer');
+
+    }
+
+  }
+
+
+
   return (
     <div className="App">
       <h1>Animals heads-up game!</h1>
@@ -35,6 +60,12 @@ const App = () => {
         {/* Conditionally render the question or answer based on isFlipped state */}
         <h2>{isFlipped ? cardPairs[count]?.answer : cardPairs[count]?.question}</h2>
       </div>
+
+      <form onSubmit={answerComparison}>
+        <label className='answerBox'>Guess the answer here: </label>
+        <input id='answer' type='text' value={answer} onChange={handleChange} className={`answer ${result === "correctAnswer" ? 'correctAnswer' : result === "wrongAnswer" ? 'wrongAnswer' : ''}`}></input>
+        <button type='submit'>Check guess</button>
+      </form>
 
       <button onClick={decreaseCount} disabled={count === 0}>Back</button>
       <button onClick={updateCount} disabled={count === cardPairs.length - 1}>Next</button>

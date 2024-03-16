@@ -108,4 +108,36 @@ h1{
   color: #f46a91;
 }
 
+.answer{
+  border: 1px solid #ccc; 
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.correctAnswer {
+  border: 3px solid green !important;
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.wrongAnswer {
+  border: 3px solid red !important; 
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.answerBox{
+  color: #f2527f;
+  font-weight: bold;
+  font-size: 20px;
+}
   
