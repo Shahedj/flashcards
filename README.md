@@ -1,8 +1,8 @@
-# Web Development Project 2 - flashcards
+# Web Development Project 3 - flashcards
 
 Submitted by: Shahad Jaber
 
-This web app: This is a heads-up game that has 10 flashcards so a user can guess which animal the card is describing and when a user presses the card, it flips to the answer.
+This web app: This is a heads-up game that has 10 flashcards so a user can guess which animal the card is describing and when a user presses the card, it flips to the answer. The user can also guess the answer by typing in their answer in the input text field and if they answer correctly the box will turn green and if the answer is wrong the box will turn red.
 
 Time spent: 3 hours spent in total
 
@@ -10,31 +10,25 @@ Time spent: 3 hours spent in total
 
 The following **required** functionality is completed:
 
-- [X] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [X] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [X] **A list of card pairs is created**
-- [X] **Clicking on the card shows the corresponding component of the information pair**
-- [X] **Clicking the next button displays a random new card**
+- [X] **The user can enter their guess in a box before seeing the flipside of the card**
+- [X] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [X] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [X] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
-![flash1](https://github.com/Shahedj/flashcards/assets/98992587/5f77b943-bedd-488c-8796-fb6ce8c1703a)
-
-
-* [ ] List anything else that you added to improve the site's functionality!
-- What could be improved is when a user goes to other cards it would change visualization. 
+* [ ] List anything else that you added to improve the site's functionality: A thing that would improve the site's functionality is 
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented user stories:
+
+![Proj3REACT](https://github.com/Shahedj/flashcards/assets/98992587/7b393654-cdb7-4b3b-9e1f-80e24febfca1)
 
 
-
-GIF created with Kap.  
-
-
+GIF created with Kap.
 
 ## Notes
 
-Describe any challenges encountered while building the app: A challenge I encountered was the ability to flip the card to toggle between showing the question and the answer. 
+Describe any challenges encountered while building the app: I haven't really faced any challenges while building the app this time, but I did have to learn how to use state hooks more. 
 
 ## License
 
